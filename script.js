@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     cover.classList.add("hide");
     launchConfetti(100);
-
+    audio.play()
     setTimeout(() => {
       cover.remove();
     }, 1000);
