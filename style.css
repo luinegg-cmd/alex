@@ -110,12 +110,12 @@ button {
   border: 2px solid #bfc1c5;
   width: 64px;
   height: 78px;
-  padding-top: 8px;
-  font-size: 22px;
+  padding-top: 1px;
+  font-size: 12px;
   font-weight: 900;
   color: var(--silver);
   clip-path: polygon(0 0, 100% 0, 90% 72%, 50% 100%, 10% 72%);
-  background: #111c;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .shield span {
@@ -170,7 +170,7 @@ button {
 }
 
 .eyebrow {
-  color: #b9bbc0;
+  color: #c7c8ca;
   font-size: 10px;
   letter-spacing: 3px;
   line-height: 1.8;
@@ -181,17 +181,18 @@ button {
   font-weight: 1000;
   letter-spacing: -2px;
   font-style: italic;
+  color:rgb(243, 255, 70);
   text-shadow: 3px 4px 0 #444, 0 0 30px #fff2;
 }
 
 .cover-subtitle {
   font-size: 10px;
   letter-spacing: 2px;
-  color: #d0d1d4;
+  color: #e3e4e7;
 }
 
 .open-button {
-  width: min(100%, 330px);
+  width: min(100%, 230px);
   display: flex;
   align-items: center;
   justify-content: space-around;
