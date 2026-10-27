@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <title>Alejandro | La gran celebración</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div id="confetti" aria-hidden="true"></div>
+  <div class="background-glow" aria-hidden="true"></div>
+
+  <!-- PORTADA: TOCA LAS BOTELLAS -->
+  <div class="cover" id="cover">
+    <div class="raiders-tag">BLACK & SILVER • EDICIÓN ESPECIAL</div>
+
+    <div class="cover-art">
+      <div class="shield">★<br><span>ALL<br>FRIENDS</span></div>
+      <div class="bottles">
+        <button class="bottle bottle-left" aria-label="Abrir invitación">
+          🍺
+        </button>
+        <button class="bottle bottle-right" aria-label="Abrir invitación">
+          🍻
+        </button>
+      </div>
+      <div class="splash">UNA GRAN FIESTA<br>SE APROXIMA...</div>
+    </div>
+
+    <p class="eyebrow">ESTÁS INVITADO A CELEBRAR</p>
+    <h1 class="cover-name">ALEJANDRO</h1>
+    <p class="cover-subtitle">AMIGOS • BRINDIS • GRANDES RECUERDOS</p>
+
+    <button class="open-button" id="openInvitation">
+      <span>»</span> TOCA LAS CERVEZAS
+      <small>PARA ABRIR LA INVITACIÓN</small>
+      <span>«</span>
+    </button>
+    <p class="hint">🍻 Toca una botella para comenzar 🍻</p>
+  </div>
+
+  <!-- CONTENIDO -->
+  <main id="content">
+
+    <header class="topbar">
+      <span>BLACK & SILVER</span>
+      <span>CELEBRACIÓN 2026</span>
+    </header>
+
+    <!-- PRESENTACIÓN -->
+    <section class="hero reveal" id="inicio">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">UNA FECHA • UN MOTIVO • MUCHOS AMIGOS</p>
+        <h2>¡VAMOS A CELEBRAR!</h2>
+        <p class="hero-intro">El homenajeado de esta ocasión es...</p>
+        <h3 class="name">ALEJANDRO</h3>
+        <p>Una buena reunión, grandes amigos y recuerdos para toda la vida.</p>
+
+        <div class="event-date">
+          <span>VIERNES</span>
+          <strong>30</strong>
+          <span>OCTUBRE · 3:30 PM</span>
+        </div>
+
+        <a href="#brindis" class="btn btn-silver">VER LA INVITACIÓN ↓</a>
+      </div>
+    </section>
+
+    <!-- REGLAS DE LA FIESTA -->
+    <section class="panel reveal" id="brindis">
+      <p class="eyebrow">ACLARACIÓN ENTRE AMIGOS 😎</p>
+      <h2>¿QUÉ VA POR CUENTA DE QUIÉN?</h2>
+
+      <div class="deal-grid">
+        <article class="deal-card">
+          <div class="deal-icon">🍾🍽️</div>
+          <h3>LA INVITACIÓN</h3>
+          <p>Los primeros <strong>4 pomos y comida</strong> van por su servilleta.</p>
+        </article>
+
+        <article class="deal-card">
+          <div class="deal-icon">🍺🥃</div>
+          <h3>LO EXTRA</h3>
+          <p>Las chelas y bebidas extras van <strong>por su cuenta.</strong></p>
+        </article>
+      </div>
+
+      <p class="closing">¡Tú trae las ganas de pasarla chingón! 🖤</p>
+    </section>
+    <!-- CUENTA REGRESIVA -->
+    <section class="panel reveal" id="cuenta">
+      <p class="eyebrow">EL RELOJ ESTÁ CORRIENDO</p>
+      <h2>¿CUÁNTO FALTA?</h2>
+      <p class="muted">Cada segundo nos acerca a la celebración.</p>
+
+      <div class="countdown">
+        <div class="time-box">
+          <strong id="days">00</strong>
+          <span>DÍAS</span>
+        </div>
+        <div class="time-box">
+          <strong id="hours">00</strong>
+          <span>HORAS</span>
+        </div>
+        <div class="time-box">
+          <strong id="minutes">00</strong>
+          <span>MINUTOS</span>
+        </div>
+        <div class="time-box">
+          <strong id="seconds">00</strong>
+          <span>SEGUNDOS</span>
+        </div>
+      </div>
+      <p id="countdownMessage" class="countdown-message"></p>
+    </section>
+
+    <!-- LUGAR -->
+    <section class="location-card reveal" id="lugar">
+      <p class="eyebrow">NUESTRO PUNTO DE REUNIÓN</p>
+      <h2>EL CAMARÓN PICANT</h2>
+      <img src="camaron.jpg" alt="Ubicación de la celebración" class="img">
+      <div class="location-icon">📍</div>
+      <p class="address">
+        C. 23 Sur 3505, Benito Juárez,<br>
+        72410 Heroica Puebla de Zaragoza,<br>
+        Puebla, México.
+      </p>
+      <div class="location-details">
+        <span>📅 VIERNES 30 DE OCTUBRE</span>
+        <span>🕞 3:30 DE LA TARDE</span>
+      </div>
+      <a class="btn btn-silver" target="_blank" rel="noopener noreferrer"
+         href="https://www.google.com/maps/search/?api=1&query=El+Camar%C3%B3n+Picant%2C+Calle+23+Sur+3505%2C+Puebla%2C+Puebla">
+        📍 VER UBICACIÓN
+      </a>
+    </section>
+
+    <!-- CARRUSEL DE FOTOS -->
+    <section class="panel reveal" id="recuerdos">
+      <p class="eyebrow">LOS MOMENTOS QUE NOS UNEN</p>
+      <h2>MOMENTOS DE ALEJANDRO</h2>
+      <p class="muted">Las mejores historias se viven entre amigos.</p>
+
+      <div class="carousel">
+        <div class="photo-frame">
+          <img id="carouselImage"
+               src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1200&q=85"
+               alt="Amigos compartiendo una comida"
+               fetchpriority="high">
+          <div class="photo-shade"></div>
+          <p id="photoCaption" class="photo-caption">
+            Grandes amigos, grandes momentos.
+          </p>
+        </div>
+
+        <div class="carousel-controls">
+          <button type="button" id="prevPhoto" aria-label="Foto anterior">❮</button>
+          <span id="photoCounter">1 / 5</span>
+          <button type="button" id="nextPhoto" aria-label="Foto siguiente">❯</button>
+        </div>
+        <div class="photo-dots" id="photoDots"></div>
+      </div>
+
+      <p class="muted small">
+        Personaliza el carrusel con las fotos reales de Alejandro.
+      </p>
+    </section>
+
+
+    <!-- CONFIRMACIÓN -->
+    <section class="whatsapp-card reveal" id="confirmacion">
+      <div class="whatsapp-icon">☎</div>
+      <p class="eyebrow">NO TE QUEDES FUERA</p>
+      <h2>¿VAS A VENIR?</h2>
+      <p>Confirma tu asistencia por WhatsApp para que te tengamos en cuenta.</p>
+
+      <a class="btn btn-whatsapp" id="whatsappButton"
+         href="https://wa.me/526572759439"
+         target="_blank" rel="noopener noreferrer">
+        CONFIRMAR POR WHATSAPP
+      </a>
+      <p class="phone-number">6572759439</p>
+    </section>
+
+    <footer>
+      <div class="footer-star">★</div>
+      <h2>NOS VEMOS EN EL CAMARÓN PICANT</h2>
+      <p>UNA CELEBRACIÓN PARA RECORDAR</p>
+      <p class="footer-small">ALEJANDRO · 30 OCTUBRE 2026</p>
+    </footer>
+ 
+  </main>
+      <footer>
+        <p>&copy; 2026 Invitaciones de Calidad. Diseños mágicos para momentos inolvidables.Jimmy</p>
+    </footer>
+
+</body>
+</html>
